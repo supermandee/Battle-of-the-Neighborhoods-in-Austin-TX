@@ -1,0 +1,3463 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_4e4115e0b64d4f3cba6a9e14e5a709a1 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4e4115e0b64d4f3cba6a9e14e5a709a1" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_4e4115e0b64d4f3cba6a9e14e5a709a1 = L.map(
+                                  'map_4e4115e0b64d4f3cba6a9e14e5a709a1',
+                                  {center: [30.2672,-97.7431],
+                                  zoom: 11,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_5f4ee623639d4114b8b3d79862c33ac9 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+        
+    
+            var circle_marker_da6577f1465144bcbc245ef02e75eefe = L.circleMarker(
+                [30.4549224,-97.80584320000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_875325292c2d4737895c495f16be7e99 = L.popup({maxWidth: '300'});
+
+            
+                var html_6531a3f581b442bd869d9ca6ec7b19b8 = $('<div id="html_6531a3f581b442bd869d9ca6ec7b19b8" style="width: 100.0%; height: 100.0%;">ANDERSON MILL, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_875325292c2d4737895c495f16be7e99.setContent(html_6531a3f581b442bd869d9ca6ec7b19b8);
+            
+
+            circle_marker_da6577f1465144bcbc245ef02e75eefe.bindPopup(popup_875325292c2d4737895c495f16be7e99);
+
+            
+        
+    
+            var circle_marker_2661d9e3e1524aa5bec75ceecb731423 = L.circleMarker(
+                [30.3105177,-97.69008459999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_4724d6be0c2a45d9bf4398dd2f7e3c1b = L.popup({maxWidth: '300'});
+
+            
+                var html_3da381e7fd5f48fb8cac92c70acd14b3 = $('<div id="html_3da381e7fd5f48fb8cac92c70acd14b3" style="width: 100.0%; height: 100.0%;">WINDSOR PARK, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_4724d6be0c2a45d9bf4398dd2f7e3c1b.setContent(html_3da381e7fd5f48fb8cac92c70acd14b3);
+            
+
+            circle_marker_2661d9e3e1524aa5bec75ceecb731423.bindPopup(popup_4724d6be0c2a45d9bf4398dd2f7e3c1b);
+
+            
+        
+    
+            var circle_marker_f6758e30bd4c46ecaba38261805f2f1e = L.circleMarker(
+                [30.2329651,-97.7613825],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_1c2ee70a14234807a11fec35fd4272f9 = L.popup({maxWidth: '300'});
+
+            
+                var html_d1c3d5694c9e479295f96dbb5d8724aa = $('<div id="html_d1c3d5694c9e479295f96dbb5d8724aa" style="width: 100.0%; height: 100.0%;">DAWSON, Austin, TX, USA- Cluster 1</div>')[0];
+                popup_1c2ee70a14234807a11fec35fd4272f9.setContent(html_d1c3d5694c9e479295f96dbb5d8724aa);
+            
+
+            circle_marker_f6758e30bd4c46ecaba38261805f2f1e.bindPopup(popup_1c2ee70a14234807a11fec35fd4272f9);
+
+            
+        
+    
+            var circle_marker_11689eea786f47118b7945455788e6da = L.circleMarker(
+                [30.29147,-97.74574439999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_981d587f89124c68b605100a4004b83a = L.popup({maxWidth: '300'});
+
+            
+                var html_c41b56b18a6b4b0689a07581b646cd4e = $('<div id="html_c41b56b18a6b4b0689a07581b646cd4e" style="width: 100.0%; height: 100.0%;">WEST UNIVERSITY, Austin, TX, USA- Cluster 3</div>')[0];
+                popup_981d587f89124c68b605100a4004b83a.setContent(html_c41b56b18a6b4b0689a07581b646cd4e);
+            
+
+            circle_marker_11689eea786f47118b7945455788e6da.bindPopup(popup_981d587f89124c68b605100a4004b83a);
+
+            
+        
+    
+            var circle_marker_5eb39923706b44c1ba5606476eb0b100 = L.circleMarker(
+                [30.2837453,-97.6961546],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_b043b08c36784facb16a2de01729aaa9 = L.popup({maxWidth: '300'});
+
+            
+                var html_3d907c8dd98b4cf6895c5bb91267de13 = $('<div id="html_3d907c8dd98b4cf6895c5bb91267de13" style="width: 100.0%; height: 100.0%;">MLK, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_b043b08c36784facb16a2de01729aaa9.setContent(html_3d907c8dd98b4cf6895c5bb91267de13);
+            
+
+            circle_marker_5eb39923706b44c1ba5606476eb0b100.bindPopup(popup_b043b08c36784facb16a2de01729aaa9);
+
+            
+        
+    
+            var circle_marker_8c6db678ec7c4a5cbffdf3d44c3a879d = L.circleMarker(
+                [30.2499887,-97.74438630000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_7fccc3cb719243659f687c4676e8eb4e = L.popup({maxWidth: '300'});
+
+            
+                var html_f511414573a44e9e8c97d94cd3d45f95 = $('<div id="html_f511414573a44e9e8c97d94cd3d45f95" style="width: 100.0%; height: 100.0%;">SOUTH RIVER CITY, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_7fccc3cb719243659f687c4676e8eb4e.setContent(html_f511414573a44e9e8c97d94cd3d45f95);
+            
+
+            circle_marker_8c6db678ec7c4a5cbffdf3d44c3a879d.bindPopup(popup_7fccc3cb719243659f687c4676e8eb4e);
+
+            
+        
+    
+            var circle_marker_14484de907d540dc81da9e1dcd6f1c47 = L.circleMarker(
+                [30.2760264,-97.66790999999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_581a249767cc4053892ca88a3dc612a5 = L.popup({maxWidth: '300'});
+
+            
+                var html_7ca022c59fb0475fa33647dee7cdc057 = $('<div id="html_7ca022c59fb0475fa33647dee7cdc057" style="width: 100.0%; height: 100.0%;">MLK-183, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_581a249767cc4053892ca88a3dc612a5.setContent(html_7ca022c59fb0475fa33647dee7cdc057);
+            
+
+            circle_marker_14484de907d540dc81da9e1dcd6f1c47.bindPopup(popup_581a249767cc4053892ca88a3dc612a5);
+
+            
+        
+    
+            var circle_marker_80962c0fc1f744b5a7c73c2a1a172371 = L.circleMarker(
+                [30.2954625,-97.7551352],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_fd46fdd06d724ab6a7d14c41693e81a2 = L.popup({maxWidth: '300'});
+
+            
+                var html_9c5fda2455dc4aa19239f425df667f08 = $('<div id="html_9c5fda2455dc4aa19239f425df667f08" style="width: 100.0%; height: 100.0%;">OLD WEST AUSTIN, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_fd46fdd06d724ab6a7d14c41693e81a2.setContent(html_9c5fda2455dc4aa19239f425df667f08);
+            
+
+            circle_marker_80962c0fc1f744b5a7c73c2a1a172371.bindPopup(popup_fd46fdd06d724ab6a7d14c41693e81a2);
+
+            
+        
+    
+            var circle_marker_61b44cfc05614bd3916a3ef7c1004255 = L.circleMarker(
+                [30.2515465,-97.7543062],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_061e517c9a7545a191fd214d6f81c2e7 = L.popup({maxWidth: '300'});
+
+            
+                var html_48144b7eb97d424bb478422a72f05302 = $('<div id="html_48144b7eb97d424bb478422a72f05302" style="width: 100.0%; height: 100.0%;">BOULDIN CREEK, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_061e517c9a7545a191fd214d6f81c2e7.setContent(html_48144b7eb97d424bb478422a72f05302);
+            
+
+            circle_marker_61b44cfc05614bd3916a3ef7c1004255.bindPopup(popup_061e517c9a7545a191fd214d6f81c2e7);
+
+            
+        
+    
+            var circle_marker_3ab87cc7baa348929b2f39ca1afc26a2 = L.circleMarker(
+                [30.3574533,-97.66548],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_e1006571df3a4eb980031cee3edf16d9 = L.popup({maxWidth: '300'});
+
+            
+                var html_77b04ddde7164e78a50a2b5b61679454 = $('<div id="html_77b04ddde7164e78a50a2b5b61679454" style="width: 100.0%; height: 100.0%;">WALNUT CREEK--PIONEER HILL, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_e1006571df3a4eb980031cee3edf16d9.setContent(html_77b04ddde7164e78a50a2b5b61679454);
+            
+
+            circle_marker_3ab87cc7baa348929b2f39ca1afc26a2.bindPopup(popup_e1006571df3a4eb980031cee3edf16d9);
+
+            
+        
+    
+            var circle_marker_20edfcfda61946cfa2eca20214ef8bf3 = L.circleMarker(
+                [30.2055702,-97.7166372],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_2fc0c038fcac460190100c98497de883 = L.popup({maxWidth: '300'});
+
+            
+                var html_14b071cfc6224eab902d153d1b435ac5 = $('<div id="html_14b071cfc6224eab902d153d1b435ac5" style="width: 100.0%; height: 100.0%;">SOUTHEAST, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_2fc0c038fcac460190100c98497de883.setContent(html_14b071cfc6224eab902d153d1b435ac5);
+            
+
+            circle_marker_20edfcfda61946cfa2eca20214ef8bf3.bindPopup(popup_2fc0c038fcac460190100c98497de883);
+
+            
+        
+    
+            var circle_marker_899237a79f9843c79fa0415deaf20094 = L.circleMarker(
+                [30.317206,-97.67380229999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_00a81d1aafe0437b9d375b558a82b222 = L.popup({maxWidth: '300'});
+
+            
+                var html_ea3e29f2a3ce4ed4bc32943a89b68fd2 = $('<div id="html_ea3e29f2a3ce4ed4bc32943a89b68fd2" style="width: 100.0%; height: 100.0%;">UNIVERSITY HILLS, Austin, TX, USA- Cluster 4</div>')[0];
+                popup_00a81d1aafe0437b9d375b558a82b222.setContent(html_ea3e29f2a3ce4ed4bc32943a89b68fd2);
+            
+
+            circle_marker_899237a79f9843c79fa0415deaf20094.bindPopup(popup_00a81d1aafe0437b9d375b558a82b222);
+
+            
+        
+    
+            var circle_marker_6ce0584066274f9e9441cf5d84551abf = L.circleMarker(
+                [30.2936434,-97.7650044],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_b870f1d4b9a84221945a5ece3578a56b = L.popup({maxWidth: '300'});
+
+            
+                var html_99aff6c9a53e4ad580b6f0a779cccec2 = $('<div id="html_99aff6c9a53e4ad580b6f0a779cccec2" style="width: 100.0%; height: 100.0%;">WINDSOR ROAD, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_b870f1d4b9a84221945a5ece3578a56b.setContent(html_99aff6c9a53e4ad580b6f0a779cccec2);
+            
+
+            circle_marker_6ce0584066274f9e9441cf5d84551abf.bindPopup(popup_b870f1d4b9a84221945a5ece3578a56b);
+
+            
+        
+    
+            var circle_marker_87085a9000454fdd98d59af234c14884 = L.circleMarker(
+                [30.3827058,-97.79882099999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_bc2396b9498b4eb9a73bf4ebfd0f9250 = L.popup({maxWidth: '300'});
+
+            
+                var html_45bc6912784b4192b4bc7baf6861abb2 = $('<div id="html_45bc6912784b4192b4bc7baf6861abb2" style="width: 100.0%; height: 100.0%;">JESTER, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_bc2396b9498b4eb9a73bf4ebfd0f9250.setContent(html_45bc6912784b4192b4bc7baf6861abb2);
+            
+
+            circle_marker_87085a9000454fdd98d59af234c14884.bindPopup(popup_bc2396b9498b4eb9a73bf4ebfd0f9250);
+
+            
+        
+    
+            var circle_marker_e3308e531e0e47cd853de2e0e07c5c62 = L.circleMarker(
+                [30.1911295,-97.88984900000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_413295a6b0f64ffeb7d2331e0e10a055 = L.popup({maxWidth: '300'});
+
+            
+                var html_aca8d5cf24a446a3b2da283402a66e03 = $('<div id="html_aca8d5cf24a446a3b2da283402a66e03" style="width: 100.0%; height: 100.0%;">CIRCLE C SOUTH, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_413295a6b0f64ffeb7d2331e0e10a055.setContent(html_aca8d5cf24a446a3b2da283402a66e03);
+            
+
+            circle_marker_e3308e531e0e47cd853de2e0e07c5c62.bindPopup(popup_413295a6b0f64ffeb7d2331e0e10a055);
+
+            
+        
+    
+            var circle_marker_89e77a82d4824af8ae6e3b33025e7b02 = L.circleMarker(
+                [30.2230485,-97.7986926],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_b0f5d2cbb60b4ebc92d3109b6202e59d = L.popup({maxWidth: '300'});
+
+            
+                var html_3b824e74eb6441e19856006c3c40f06d = $('<div id="html_3b824e74eb6441e19856006c3c40f06d" style="width: 100.0%; height: 100.0%;">WESTGATE, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_b0f5d2cbb60b4ebc92d3109b6202e59d.setContent(html_3b824e74eb6441e19856006c3c40f06d);
+            
+
+            circle_marker_89e77a82d4824af8ae6e3b33025e7b02.bindPopup(popup_b0f5d2cbb60b4ebc92d3109b6202e59d);
+
+            
+        
+    
+            var circle_marker_b2882a24d74d4ea7b195e1a3104770b3 = L.circleMarker(
+                [30.2355462,-97.7685704],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_e2db9d7b4bbc444db41870bb18811a6f = L.popup({maxWidth: '300'});
+
+            
+                var html_6f6a1f00f3df4a90a6f74f4459ada608 = $('<div id="html_6f6a1f00f3df4a90a6f74f4459ada608" style="width: 100.0%; height: 100.0%;">GALINDO, Austin, TX, USA- Cluster 3</div>')[0];
+                popup_e2db9d7b4bbc444db41870bb18811a6f.setContent(html_6f6a1f00f3df4a90a6f74f4459ada608);
+            
+
+            circle_marker_b2882a24d74d4ea7b195e1a3104770b3.bindPopup(popup_e2db9d7b4bbc444db41870bb18811a6f);
+
+            
+        
+    
+            var circle_marker_150274391f9e446c995f9a00684c334d = L.circleMarker(
+                [30.1902458,-97.8454709],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_be8f00be6c7f4813b97f958d7f0a9f9a = L.popup({maxWidth: '300'});
+
+            
+                var html_cd40d1445e084639936c396b2b895a79 = $('<div id="html_cd40d1445e084639936c396b2b895a79" style="width: 100.0%; height: 100.0%;">BRODIE LANE, Austin, TX, USA- Cluster 1</div>')[0];
+                popup_be8f00be6c7f4813b97f958d7f0a9f9a.setContent(html_cd40d1445e084639936c396b2b895a79);
+            
+
+            circle_marker_150274391f9e446c995f9a00684c334d.bindPopup(popup_be8f00be6c7f4813b97f958d7f0a9f9a);
+
+            
+        
+    
+            var circle_marker_8beacb8d0ac447bdb0211d0156214f2d = L.circleMarker(
+                [30.30816969999999,-97.7274412],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_027b4e5109304fd088f85ea154d936cd = L.popup({maxWidth: '300'});
+
+            
+                var html_d7389f65e5e943b1b34e8e952d204407 = $('<div id="html_d7389f65e5e943b1b34e8e952d204407" style="width: 100.0%; height: 100.0%;">HYDE PARK, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_027b4e5109304fd088f85ea154d936cd.setContent(html_d7389f65e5e943b1b34e8e952d204407);
+            
+
+            circle_marker_8beacb8d0ac447bdb0211d0156214f2d.bindPopup(popup_027b4e5109304fd088f85ea154d936cd);
+
+            
+        
+    
+            var circle_marker_c2680328744d4e57a723022c424ee2ba = L.circleMarker(
+                [30.2124078,-97.73693809999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_f43cc04bcac94a378271848332994587 = L.popup({maxWidth: '300'});
+
+            
+                var html_00c5f2e9aa8547a7a77a3a9cfd99ab1b = $('<div id="html_00c5f2e9aa8547a7a77a3a9cfd99ab1b" style="width: 100.0%; height: 100.0%;">MCKINNEY, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_f43cc04bcac94a378271848332994587.setContent(html_00c5f2e9aa8547a7a77a3a9cfd99ab1b);
+            
+
+            circle_marker_c2680328744d4e57a723022c424ee2ba.bindPopup(popup_f43cc04bcac94a378271848332994587);
+
+            
+        
+    
+            var circle_marker_a833d0a23a254ded9019870eed04ba45 = L.circleMarker(
+                [30.3793642,-97.7491397],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_52317a002ca74997b96b472b505f6e33 = L.popup({maxWidth: '300'});
+
+            
+                var html_c2c5e8bd7a204207acb6c52b207130c7 = $('<div id="html_c2c5e8bd7a204207acb6c52b207130c7" style="width: 100.0%; height: 100.0%;">WESTOVER HILLS, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_52317a002ca74997b96b472b505f6e33.setContent(html_c2c5e8bd7a204207acb6c52b207130c7);
+            
+
+            circle_marker_a833d0a23a254ded9019870eed04ba45.bindPopup(popup_52317a002ca74997b96b472b505f6e33);
+
+            
+        
+    
+            var circle_marker_544aec4e6b7e49f5a874d3dfbda76f5d = L.circleMarker(
+                [30.389061,-97.69415579999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_67e845de7a6941debba86f852001b33c = L.popup({maxWidth: '300'});
+
+            
+                var html_1eb50d56af19489b8fe03ae91947b197 = $('<div id="html_1eb50d56af19489b8fe03ae91947b197" style="width: 100.0%; height: 100.0%;">GRACY WOODS, Austin, TX, USA- Cluster 2</div>')[0];
+                popup_67e845de7a6941debba86f852001b33c.setContent(html_1eb50d56af19489b8fe03ae91947b197);
+            
+
+            circle_marker_544aec4e6b7e49f5a874d3dfbda76f5d.bindPopup(popup_67e845de7a6941debba86f852001b33c);
+
+            
+        
+    
+            var circle_marker_c8ce46f19b3b4f59b29d45527ee2f67a = L.circleMarker(
+                [30.23471079999999,-97.7118003],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_0dcf317cea2a4d71b80b74a6c90401da = L.popup({maxWidth: '300'});
+
+            
+                var html_06ac1c8c22714f06819ae47f4612de9f = $('<div id="html_06ac1c8c22714f06819ae47f4612de9f" style="width: 100.0%; height: 100.0%;">PLEASANT VALLEY, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_0dcf317cea2a4d71b80b74a6c90401da.setContent(html_06ac1c8c22714f06819ae47f4612de9f);
+            
+
+            circle_marker_c8ce46f19b3b4f59b29d45527ee2f67a.bindPopup(popup_0dcf317cea2a4d71b80b74a6c90401da);
+
+            
+        
+    
+            var circle_marker_739400471bbe40db9cee031e05faea03 = L.circleMarker(
+                [30.2372278,-97.7837533],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_d14f7e4c820d4c0c8cb90440881ab638 = L.popup({maxWidth: '300'});
+
+            
+                var html_886ab35c8c924b6ea30168667739bfb0 = $('<div id="html_886ab35c8c924b6ea30168667739bfb0" style="width: 100.0%; height: 100.0%;">SOUTH LAMAR, Austin, TX, USA- Cluster 3</div>')[0];
+                popup_d14f7e4c820d4c0c8cb90440881ab638.setContent(html_886ab35c8c924b6ea30168667739bfb0);
+            
+
+            circle_marker_739400471bbe40db9cee031e05faea03.bindPopup(popup_d14f7e4c820d4c0c8cb90440881ab638);
+
+            
+        
+    
+            var circle_marker_0ca01a38fa7a4323835221ce38a4eec2 = L.circleMarker(
+                [30.3000111,-97.67380229999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_fb2882ff778b4e19b35d33b807180c24 = L.popup({maxWidth: '300'});
+
+            
+                var html_9849472e4b5e46caaddcb533c61399fb = $('<div id="html_9849472e4b5e46caaddcb533c61399fb" style="width: 100.0%; height: 100.0%;">PECAN SPRINGS-SPRINGDALE, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_fb2882ff778b4e19b35d33b807180c24.setContent(html_9849472e4b5e46caaddcb533c61399fb);
+            
+
+            circle_marker_0ca01a38fa7a4323835221ce38a4eec2.bindPopup(popup_fb2882ff778b4e19b35d33b807180c24);
+
+            
+        
+    
+            var circle_marker_ce50920da2034bd3a158ae269ee3358f = L.circleMarker(
+                [30.4038127,-97.8536211],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_60896713542f4216ab7441d679fcb186 = L.popup({maxWidth: '300'});
+
+            
+                var html_bd6052e79ee04cfd96bc538ff0233e45 = $('<div id="html_bd6052e79ee04cfd96bc538ff0233e45" style="width: 100.0%; height: 100.0%;">FOUR POINTS, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_60896713542f4216ab7441d679fcb186.setContent(html_bd6052e79ee04cfd96bc538ff0233e45);
+            
+
+            circle_marker_ce50920da2034bd3a158ae269ee3358f.bindPopup(popup_60896713542f4216ab7441d679fcb186);
+
+            
+        
+    
+            var circle_marker_9d72eaea218e4d63b0cca6fe53506c4a = L.circleMarker(
+                [30.4504785,-97.785287],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_1ee65c50c4714973a876f73294802688 = L.popup({maxWidth: '300'});
+
+            
+                var html_49fc2e11b196405c989cb6306cc0ce7c = $('<div id="html_49fc2e11b196405c989cb6306cc0ce7c" style="width: 100.0%; height: 100.0%;">POND SPRINGS, Austin, TX, USA- Cluster 1</div>')[0];
+                popup_1ee65c50c4714973a876f73294802688.setContent(html_49fc2e11b196405c989cb6306cc0ce7c);
+            
+
+            circle_marker_9d72eaea218e4d63b0cca6fe53506c4a.bindPopup(popup_1ee65c50c4714973a876f73294802688);
+
+            
+        
+    
+            var circle_marker_cec1b31872564965bfccf4731d7512fa = L.circleMarker(
+                [30.2264094,-97.7552517],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_0324d5dc799f4a6eab12fea9d2a7297f = L.popup({maxWidth: '300'});
+
+            
+                var html_534380604ae94bdbb8c3938932408137 = $('<div id="html_534380604ae94bdbb8c3938932408137" style="width: 100.0%; height: 100.0%;">ST. EDWARDS, Austin, TX, USA- Cluster 3</div>')[0];
+                popup_0324d5dc799f4a6eab12fea9d2a7297f.setContent(html_534380604ae94bdbb8c3938932408137);
+            
+
+            circle_marker_cec1b31872564965bfccf4731d7512fa.bindPopup(popup_0324d5dc799f4a6eab12fea9d2a7297f);
+
+            
+        
+    
+            var circle_marker_645c427adfe046b09b45d6d746c9a024 = L.circleMarker(
+                [30.2849185,-97.7340567],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_caf781ea4767442693feeb4d1f99b8cb = L.popup({maxWidth: '300'});
+
+            
+                var html_759f5c436f3044a086c7de17017fde32 = $('<div id="html_759f5c436f3044a086c7de17017fde32" style="width: 100.0%; height: 100.0%;">UT, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_caf781ea4767442693feeb4d1f99b8cb.setContent(html_759f5c436f3044a086c7de17017fde32);
+            
+
+            circle_marker_645c427adfe046b09b45d6d746c9a024.bindPopup(popup_caf781ea4767442693feeb4d1f99b8cb);
+
+            
+        
+    
+            var circle_marker_dd5a2b00cb5f4ff49c1f0328633feadb = L.circleMarker(
+                [30.3339959,-97.7169771],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_735d1ff56e6a4303a5697f317c19f7ba = L.popup({maxWidth: '300'});
+
+            
+                var html_6ee5957aa8514bdfbda9b0e779dc91e7 = $('<div id="html_6ee5957aa8514bdfbda9b0e779dc91e7" style="width: 100.0%; height: 100.0%;">HIGHLAND, Austin, TX, USA- Cluster 1</div>')[0];
+                popup_735d1ff56e6a4303a5697f317c19f7ba.setContent(html_6ee5957aa8514bdfbda9b0e779dc91e7);
+            
+
+            circle_marker_dd5a2b00cb5f4ff49c1f0328633feadb.bindPopup(popup_735d1ff56e6a4303a5697f317c19f7ba);
+
+            
+        
+    
+            var circle_marker_8f8760b3f153495a83f6ff42bc0a6095 = L.circleMarker(
+                [30.2729209,-97.74438630000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_b336b13fb2c84a2a874571a19f15e323 = L.popup({maxWidth: '300'});
+
+            
+                var html_80133888ced14824a760e961b0beb4ff = $('<div id="html_80133888ced14824a760e961b0beb4ff" style="width: 100.0%; height: 100.0%;">DOWNTOWN, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_b336b13fb2c84a2a874571a19f15e323.setContent(html_80133888ced14824a760e961b0beb4ff);
+            
+
+            circle_marker_8f8760b3f153495a83f6ff42bc0a6095.bindPopup(popup_b336b13fb2c84a2a874571a19f15e323);
+
+            
+        
+    
+            var circle_marker_63a7322fe2254ee5b9d6dfa987e1ce02 = L.circleMarker(
+                [30.2964691,-97.72321529999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_07776ccd6d7842218a52f6b3d69faa96 = L.popup({maxWidth: '300'});
+
+            
+                var html_f4f1ff9c3c104580bee752f2cb444bbe = $('<div id="html_f4f1ff9c3c104580bee752f2cb444bbe" style="width: 100.0%; height: 100.0%;">HANCOCK, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_07776ccd6d7842218a52f6b3d69faa96.setContent(html_f4f1ff9c3c104580bee752f2cb444bbe);
+            
+
+            circle_marker_63a7322fe2254ee5b9d6dfa987e1ce02.bindPopup(popup_07776ccd6d7842218a52f6b3d69faa96);
+
+            
+        
+    
+            var circle_marker_c4d3847c18b34446a417e1e971519793 = L.circleMarker(
+                [30.18505,-97.8020854],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_29a9f681cac24c878f41cb561a2a9c9c = L.popup({maxWidth: '300'});
+
+            
+                var html_9f6db8350ab04d32ae386cde5396db0a = $('<div id="html_9f6db8350ab04d32ae386cde5396db0a" style="width: 100.0%; height: 100.0%;">DITTMAR--SLAUGHTER, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_29a9f681cac24c878f41cb561a2a9c9c.setContent(html_9f6db8350ab04d32ae386cde5396db0a);
+            
+
+            circle_marker_c4d3847c18b34446a417e1e971519793.bindPopup(popup_29a9f681cac24c878f41cb561a2a9c9c);
+
+            
+        
+    
+            var circle_marker_67dfa090cfaa439aa38a15b84b27b39a = L.circleMarker(
+                [30.3990005,-97.66577540000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_50d9933101784aa0b85df7e60554f88c = L.popup({maxWidth: '300'});
+
+            
+                var html_f9238b40e52f4ccba52d6606ae0fe414 = $('<div id="html_f9238b40e52f4ccba52d6606ae0fe414" style="width: 100.0%; height: 100.0%;">TECH RIDGE, Austin, TX, USA- Cluster 4</div>')[0];
+                popup_50d9933101784aa0b85df7e60554f88c.setContent(html_f9238b40e52f4ccba52d6606ae0fe414);
+            
+
+            circle_marker_67dfa090cfaa439aa38a15b84b27b39a.bindPopup(popup_50d9933101784aa0b85df7e60554f88c);
+
+            
+        
+    
+            var circle_marker_456b817225b74b7cb9234b0efa0fe1b6 = L.circleMarker(
+                [30.3620772,-97.6399776],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_a981a564ac0345ad8bfb0654c598397d = L.popup({maxWidth: '300'});
+
+            
+                var html_f88442f0c8c540a8b3dd9f6d3d65be87 = $('<div id="html_f88442f0c8c540a8b3dd9f6d3d65be87" style="width: 100.0%; height: 100.0%;">SAMSUNG--PIONEER CROSSING, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_a981a564ac0345ad8bfb0654c598397d.setContent(html_f88442f0c8c540a8b3dd9f6d3d65be87);
+            
+
+            circle_marker_456b817225b74b7cb9234b0efa0fe1b6.bindPopup(popup_a981a564ac0345ad8bfb0654c598397d);
+
+            
+        
+    
+            var circle_marker_d7a6df66c80d42508412c82f2c4aa7aa = L.circleMarker(
+                [30.2954625,-97.7551352],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_7d3d2b19ff114bf2909c384eeb6631ac = L.popup({maxWidth: '300'});
+
+            
+                var html_47b723da6cd146efb0d3874ff6aab719 = $('<div id="html_47b723da6cd146efb0d3874ff6aab719" style="width: 100.0%; height: 100.0%;">WEST AUSTIN NG, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_7d3d2b19ff114bf2909c384eeb6631ac.setContent(html_47b723da6cd146efb0d3874ff6aab719);
+            
+
+            circle_marker_d7a6df66c80d42508412c82f2c4aa7aa.bindPopup(popup_7d3d2b19ff114bf2909c384eeb6631ac);
+
+            
+        
+    
+            var circle_marker_d6bdf84d26d34f9c898515e06bdfe09d = L.circleMarker(
+                [30.157712,-97.7688933],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_6daae85d200642dc98d2e498cd07db6a = L.popup({maxWidth: '300'});
+
+            
+                var html_d4bc13fbc6834311ad3605ed9c6b5d54 = $('<div id="html_d4bc13fbc6834311ad3605ed9c6b5d54" style="width: 100.0%; height: 100.0%;">BLUFF SPRINGS, TX, USA- Cluster 0</div>')[0];
+                popup_6daae85d200642dc98d2e498cd07db6a.setContent(html_d4bc13fbc6834311ad3605ed9c6b5d54);
+            
+
+            circle_marker_d6bdf84d26d34f9c898515e06bdfe09d.bindPopup(popup_6daae85d200642dc98d2e498cd07db6a);
+
+            
+        
+    
+            var circle_marker_2667d3ad84e943dca86d8978944709eb = L.circleMarker(
+                [30.2295806,-97.69706509999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_028921e1182d4a66aa2fc43cf8012381 = L.popup({maxWidth: '300'});
+
+            
+                var html_97e0d22f437f4c569063bb1a55b5cbec = $('<div id="html_97e0d22f437f4c569063bb1a55b5cbec" style="width: 100.0%; height: 100.0%;">MONTOPOLIS, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_028921e1182d4a66aa2fc43cf8012381.setContent(html_97e0d22f437f4c569063bb1a55b5cbec);
+            
+
+            circle_marker_2667d3ad84e943dca86d8978944709eb.bindPopup(popup_028921e1182d4a66aa2fc43cf8012381);
+
+            
+        
+    
+            var circle_marker_3991836c6a154b5ba1ae3adf186331dd = L.circleMarker(
+                [30.1979137,-97.8245578],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_9908b06078d74c38bc9236b8bfaf1e4a = L.popup({maxWidth: '300'});
+
+            
+                var html_e74405c7593942078abf527cabe767ff = $('<div id="html_e74405c7593942078abf527cabe767ff" style="width: 100.0%; height: 100.0%;">CHERRY CREEK, Austin, TX, USA- Cluster 2</div>')[0];
+                popup_9908b06078d74c38bc9236b8bfaf1e4a.setContent(html_e74405c7593942078abf527cabe767ff);
+            
+
+            circle_marker_3991836c6a154b5ba1ae3adf186331dd.bindPopup(popup_9908b06078d74c38bc9236b8bfaf1e4a);
+
+            
+        
+    
+            var circle_marker_23bc267e85a5481f985ba05e699bdf42 = L.circleMarker(
+                [30.2533686,-97.7835429],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_4f4f2cc6a47142fb95ca9ce9626ed849 = L.popup({maxWidth: '300'});
+
+            
+                var html_8ebbea2cd4784d0cb688942bded04c97 = $('<div id="html_8ebbea2cd4784d0cb688942bded04c97" style="width: 100.0%; height: 100.0%;">BARTON HILLS, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_4f4f2cc6a47142fb95ca9ce9626ed849.setContent(html_8ebbea2cd4784d0cb688942bded04c97);
+            
+
+            circle_marker_23bc267e85a5481f985ba05e699bdf42.bindPopup(popup_4f4f2cc6a47142fb95ca9ce9626ed849);
+
+            
+        
+    
+            var circle_marker_347a4a68221b47909ff3fac2003bd0dc = L.circleMarker(
+                [30.390737,-97.7395104],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_464b8c69fb7a48509c1dd03643d00cb1 = L.popup({maxWidth: '300'});
+
+            
+                var html_e0a85ff2b4364ab790f94d18d6324e93 = $('<div id="html_e0a85ff2b4364ab790f94d18d6324e93" style="width: 100.0%; height: 100.0%;">GATEWAY, Austin, TX, USA- Cluster 1</div>')[0];
+                popup_464b8c69fb7a48509c1dd03643d00cb1.setContent(html_e0a85ff2b4364ab790f94d18d6324e93);
+            
+
+            circle_marker_347a4a68221b47909ff3fac2003bd0dc.bindPopup(popup_464b8c69fb7a48509c1dd03643d00cb1);
+
+            
+        
+    
+            var circle_marker_7c220a287dd44df3be114ecaa81e7f35 = L.circleMarker(
+                [30.3610582,-97.7232992],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_803370fa0b6147439738bdbda307ba2e = L.popup({maxWidth: '300'});
+
+            
+                var html_802779a486804d5cac9753da22972b75 = $('<div id="html_802779a486804d5cac9753da22972b75" style="width: 100.0%; height: 100.0%;">WOOTEN, Austin, TX, USA- Cluster 1</div>')[0];
+                popup_803370fa0b6147439738bdbda307ba2e.setContent(html_802779a486804d5cac9753da22972b75);
+            
+
+            circle_marker_7c220a287dd44df3be114ecaa81e7f35.bindPopup(popup_803370fa0b6147439738bdbda307ba2e);
+
+            
+        
+    
+            var circle_marker_a844d2a43c2246219795cec58c5ffe53 = L.circleMarker(
+                [30.2573267,-97.71723019999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_0a4f29255e23444fbf30ec76d2b8df88 = L.popup({maxWidth: '300'});
+
+            
+                var html_0a434838aa6d4a829dea75e7c452776c = $('<div id="html_0a434838aa6d4a829dea75e7c452776c" style="width: 100.0%; height: 100.0%;">HOLLY, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_0a4f29255e23444fbf30ec76d2b8df88.setContent(html_0a434838aa6d4a829dea75e7c452776c);
+            
+
+            circle_marker_a844d2a43c2246219795cec58c5ffe53.bindPopup(popup_0a4f29255e23444fbf30ec76d2b8df88);
+
+            
+        
+    
+            var circle_marker_901a67282dd4475ca702baee63329b22 = L.circleMarker(
+                [30.2088183,-97.8047019],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_de7b3e6aa3c5491a9079e5c5e1616079 = L.popup({maxWidth: '300'});
+
+            
+                var html_d219a9eafc0f43e596012e2539732c86 = $('<div id="html_d219a9eafc0f43e596012e2539732c86" style="width: 100.0%; height: 100.0%;">GARRISON PARK, Austin, TX, USA- Cluster 1</div>')[0];
+                popup_de7b3e6aa3c5491a9079e5c5e1616079.setContent(html_d219a9eafc0f43e596012e2539732c86);
+            
+
+            circle_marker_901a67282dd4475ca702baee63329b22.bindPopup(popup_de7b3e6aa3c5491a9079e5c5e1616079);
+
+            
+        
+    
+            var circle_marker_280fc6853262454d863fb99e5a5dea3a = L.circleMarker(
+                [30.3739474,-97.8517552],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_7f5b0471e1a5431bb2abcd1c62737544 = L.popup({maxWidth: '300'});
+
+            
+                var html_9ddcb819bfcb414e8a911c5b96f43a22 = $('<div id="html_9ddcb819bfcb414e8a911c5b96f43a22" style="width: 100.0%; height: 100.0%;">RIVER PLACE, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_7f5b0471e1a5431bb2abcd1c62737544.setContent(html_9ddcb819bfcb414e8a911c5b96f43a22);
+            
+
+            circle_marker_280fc6853262454d863fb99e5a5dea3a.bindPopup(popup_7f5b0471e1a5431bb2abcd1c62737544);
+
+            
+        
+    
+            var circle_marker_847f1472cc5e4347819c3b991cdbb691 = L.circleMarker(
+                [30.3499918,-97.7009416],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_6912d2be48864064a641411412dfc61c = L.popup({maxWidth: '300'});
+
+            
+                var html_7d50afff28a947b3a753e42166b6afa8 = $('<div id="html_7d50afff28a947b3a753e42166b6afa8" style="width: 100.0%; height: 100.0%;">GEORGIAN ACRES, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_6912d2be48864064a641411412dfc61c.setContent(html_7d50afff28a947b3a753e42166b6afa8);
+            
+
+            circle_marker_847f1472cc5e4347819c3b991cdbb691.bindPopup(popup_6912d2be48864064a641411412dfc61c);
+
+            
+        
+    
+            var circle_marker_634ec2514aad488db2dfab120635af66 = L.circleMarker(
+                [30.2585193,-97.7286604],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_4baf0cb3cda648208612cbbfe227dd90 = L.popup({maxWidth: '300'});
+
+            
+                var html_5896345fa81145f3ab6b7df0ac2d6e29 = $('<div id="html_5896345fa81145f3ab6b7df0ac2d6e29" style="width: 100.0%; height: 100.0%;">EAST CESAR CHAVEZ, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_4baf0cb3cda648208612cbbfe227dd90.setContent(html_5896345fa81145f3ab6b7df0ac2d6e29);
+            
+
+            circle_marker_634ec2514aad488db2dfab120635af66.bindPopup(popup_4baf0cb3cda648208612cbbfe227dd90);
+
+            
+        
+    
+            var circle_marker_e7245b156338428b9ab4f39316445709 = L.circleMarker(
+                [30.3176931,-97.7211877],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_aa65ccdc128a43058cdd6deac01ea3e1 = L.popup({maxWidth: '300'});
+
+            
+                var html_d4d5d1fd59ce4a6e8460da26c58046c0 = $('<div id="html_d4d5d1fd59ce4a6e8460da26c58046c0" style="width: 100.0%; height: 100.0%;">NORTH LOOP, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_aa65ccdc128a43058cdd6deac01ea3e1.setContent(html_d4d5d1fd59ce4a6e8460da26c58046c0);
+            
+
+            circle_marker_e7245b156338428b9ab4f39316445709.bindPopup(popup_aa65ccdc128a43058cdd6deac01ea3e1);
+
+            
+        
+    
+            var circle_marker_d37715f72404438e8893736c77ae99bd = L.circleMarker(
+                [30.4492728,-97.73324819999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_0fe2ef8912364bcebae01ecd1ee3708f = L.popup({maxWidth: '300'});
+
+            
+                var html_c95302588f844867b22806840df232a5 = $('<div id="html_c95302588f844867b22806840df232a5" style="width: 100.0%; height: 100.0%;">MCNEIL, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_0fe2ef8912364bcebae01ecd1ee3708f.setContent(html_c95302588f844867b22806840df232a5);
+            
+
+            circle_marker_d37715f72404438e8893736c77ae99bd.bindPopup(popup_0fe2ef8912364bcebae01ecd1ee3708f);
+
+            
+        
+    
+            var circle_marker_f22258bc2f264b9baab0867c6d91a1b8 = L.circleMarker(
+                [30.2986834,-97.70037099999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_2354b2ac3ed8443f9983e1c2843437a8 = L.popup({maxWidth: '300'});
+
+            
+                var html_5d5c7c6eba76412fb3105ac15703f0d5 = $('<div id="html_5d5c7c6eba76412fb3105ac15703f0d5" style="width: 100.0%; height: 100.0%;">RMMA, Austin, TX, USA- Cluster 3</div>')[0];
+                popup_2354b2ac3ed8443f9983e1c2843437a8.setContent(html_5d5c7c6eba76412fb3105ac15703f0d5);
+            
+
+            circle_marker_f22258bc2f264b9baab0867c6d91a1b8.bindPopup(popup_2354b2ac3ed8443f9983e1c2843437a8);
+
+            
+        
+    
+            var circle_marker_b29452ec2f7949168c8a8cd4f8c8d293 = L.circleMarker(
+                [30.3280279,-97.80552589999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_d837db00caa74a3bb0986dd7b59058be = L.popup({maxWidth: '300'});
+
+            
+                var html_838d1434a18c44d48a27a1523fd6e066 = $('<div id="html_838d1434a18c44d48a27a1523fd6e066" style="width: 100.0%; height: 100.0%;">DAVENPORT LAKE AUSTIN, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_d837db00caa74a3bb0986dd7b59058be.setContent(html_838d1434a18c44d48a27a1523fd6e066);
+            
+
+            circle_marker_b29452ec2f7949168c8a8cd4f8c8d293.bindPopup(popup_d837db00caa74a3bb0986dd7b59058be);
+
+            
+        
+    
+            var circle_marker_3773217fbd7e40758e169ccf0618a09d = L.circleMarker(
+                [30.25426879999999,-97.7669536],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_a0ad3b57ef9540c091d095bde65d6e26 = L.popup({maxWidth: '300'});
+
+            
+                var html_4395ebed28994002846debd8df1c13b7 = $('<div id="html_4395ebed28994002846debd8df1c13b7" style="width: 100.0%; height: 100.0%;">ZILKER, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_a0ad3b57ef9540c091d095bde65d6e26.setContent(html_4395ebed28994002846debd8df1c13b7);
+            
+
+            circle_marker_3773217fbd7e40758e169ccf0618a09d.bindPopup(popup_a0ad3b57ef9540c091d095bde65d6e26);
+
+            
+        
+    
+            var circle_marker_898eff976652432f9987c8b9df15e06e = L.circleMarker(
+                [30.0537607,-98.0028892],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_6351ad2f03ab49359c1b48370fb29fe1 = L.popup({maxWidth: '300'});
+
+            
+                var html_36b1d2122d45469d97eeb07c201b056c = $('<div id="html_36b1d2122d45469d97eeb07c201b056c" style="width: 100.0%; height: 100.0%;">HAYS WARTHA, TX, USA- Cluster 0</div>')[0];
+                popup_6351ad2f03ab49359c1b48370fb29fe1.setContent(html_36b1d2122d45469d97eeb07c201b056c);
+            
+
+            circle_marker_898eff976652432f9987c8b9df15e06e.bindPopup(popup_6351ad2f03ab49359c1b48370fb29fe1);
+
+            
+        
+    
+            var circle_marker_8b2e39bcab914cd8a1f2f5d1a2793c7a = L.circleMarker(
+                [30.313495,-97.656667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_ccaf6a961cf249818dd0389fa998978d = L.popup({maxWidth: '300'});
+
+            
+                var html_e32458e5da594f788ca53f2f2af10048 = $('<div id="html_e32458e5da594f788ca53f2f2af10048" style="width: 100.0%; height: 100.0%;">LBJ, Austin, TX, USA- Cluster 2</div>')[0];
+                popup_ccaf6a961cf249818dd0389fa998978d.setContent(html_e32458e5da594f788ca53f2f2af10048);
+            
+
+            circle_marker_8b2e39bcab914cd8a1f2f5d1a2793c7a.bindPopup(popup_ccaf6a961cf249818dd0389fa998978d);
+
+            
+        
+    
+            var circle_marker_394281301a244dbea4528444141e830f = L.circleMarker(
+                [30.21315749999999,-97.77435220000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_c2e34f9bc68a4cc0929210378728090c = L.popup({maxWidth: '300'});
+
+            
+                var html_fc6d0c651f38443eb5f3d6884bfe0001 = $('<div id="html_fc6d0c651f38443eb5f3d6884bfe0001" style="width: 100.0%; height: 100.0%;">WEST CONGRESS, Austin, TX, USA- Cluster 4</div>')[0];
+                popup_c2e34f9bc68a4cc0929210378728090c.setContent(html_fc6d0c651f38443eb5f3d6884bfe0001);
+            
+
+            circle_marker_394281301a244dbea4528444141e830f.bindPopup(popup_c2e34f9bc68a4cc0929210378728090c);
+
+            
+        
+    
+            var circle_marker_949d495ec8a94c81902c46dd58162300 = L.circleMarker(
+                [30.2086396,-97.8728403],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_4535236c476444ed965351468183bd56 = L.popup({maxWidth: '300'});
+
+            
+                var html_6aed1c75f1a84e7e82a91408d69ae50f = $('<div id="html_6aed1c75f1a84e7e82a91408d69ae50f" style="width: 100.0%; height: 100.0%;">VILLAGE AT WESTERN OAKS, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_4535236c476444ed965351468183bd56.setContent(html_6aed1c75f1a84e7e82a91408d69ae50f);
+            
+
+            circle_marker_949d495ec8a94c81902c46dd58162300.bindPopup(popup_4535236c476444ed965351468183bd56);
+
+            
+        
+    
+            var circle_marker_095377b5f1684b17b9ce923409fa2085 = L.circleMarker(
+                [30.2091069,-97.6472349],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_15ae4cc086384bef8675085d048bcbc2 = L.popup({maxWidth: '300'});
+
+            
+                var html_82fe83eb08a64cc59e8594d89a115c10 = $('<div id="html_82fe83eb08a64cc59e8594d89a115c10" style="width: 100.0%; height: 100.0%;">DEL VALLE, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_15ae4cc086384bef8675085d048bcbc2.setContent(html_82fe83eb08a64cc59e8594d89a115c10);
+            
+
+            circle_marker_095377b5f1684b17b9ce923409fa2085.bindPopup(popup_15ae4cc086384bef8675085d048bcbc2);
+
+            
+        
+    
+            var circle_marker_c2a27881fc5e4d12b93f02652424562f = L.circleMarker(
+                [30.4704391,-97.7701944],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_b3f8d57eb9aa4583ba229cb08cf131b3 = L.popup({maxWidth: '300'});
+
+            
+                var html_557a8a3268e845c8b4f175f555c57bbe = $('<div id="html_557a8a3268e845c8b4f175f555c57bbe" style="width: 100.0%; height: 100.0%;">ROBINSON RANCH, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_b3f8d57eb9aa4583ba229cb08cf131b3.setContent(html_557a8a3268e845c8b4f175f555c57bbe);
+            
+
+            circle_marker_c2a27881fc5e4d12b93f02652424562f.bindPopup(popup_b3f8d57eb9aa4583ba229cb08cf131b3);
+
+            
+        
+    
+            var circle_marker_e310883803b741cd97a83752a1d2a74f = L.circleMarker(
+                [30.31962499999999,-97.754052],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_22d83d9f888345acba50bf49c842631a = L.popup({maxWidth: '300'});
+
+            
+                var html_2b585b3634ba40b69cdea8ab59db1e96 = $('<div id="html_2b585b3634ba40b69cdea8ab59db1e96" style="width: 100.0%; height: 100.0%;">BULL CREEK, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_22d83d9f888345acba50bf49c842631a.setContent(html_2b585b3634ba40b69cdea8ab59db1e96);
+            
+
+            circle_marker_e310883803b741cd97a83752a1d2a74f.bindPopup(popup_22d83d9f888345acba50bf49c842631a);
+
+            
+        
+    
+            var circle_marker_62e4f626245a44a7ba4ad3b223147e7d = L.circleMarker(
+                [30.3435785,-97.68886560000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_2901436fa5ac4da8aee9926922538c65 = L.popup({maxWidth: '300'});
+
+            
+                var html_34844e2621ae46bbbbcfa41a5b12fcac = $('<div id="html_34844e2621ae46bbbbcfa41a5b12fcac" style="width: 100.0%; height: 100.0%;">HERITAGE HILLS, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_2901436fa5ac4da8aee9926922538c65.setContent(html_34844e2621ae46bbbbcfa41a5b12fcac);
+            
+
+            circle_marker_62e4f626245a44a7ba4ad3b223147e7d.bindPopup(popup_2901436fa5ac4da8aee9926922538c65);
+
+            
+        
+    
+            var circle_marker_dd51d348443f48c2aec2beb5b6653889 = L.circleMarker(
+                [30.2877953,-97.76733139999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_c61b47bdaa9448bb885673d847380b3b = L.popup({maxWidth: '300'});
+
+            
+                var html_750282264c5943fa99576fd476d618e2 = $('<div id="html_750282264c5943fa99576fd476d618e2" style="width: 100.0%; height: 100.0%;">OLD ENFIELD, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_c61b47bdaa9448bb885673d847380b3b.setContent(html_750282264c5943fa99576fd476d618e2);
+            
+
+            circle_marker_dd51d348443f48c2aec2beb5b6653889.bindPopup(popup_c61b47bdaa9448bb885673d847380b3b);
+
+            
+        
+    
+            var circle_marker_f082191fcf8d4f3ab0af8ee52ba3b075 = L.circleMarker(
+                [30.2790657,-97.7131577],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_dd5d3a4a225b449285300d507323e73b = L.popup({maxWidth: '300'});
+
+            
+                var html_a0da8146d0a0430eacee525ef7cdbe1b = $('<div id="html_a0da8146d0a0430eacee525ef7cdbe1b" style="width: 100.0%; height: 100.0%;">CHESTNUT, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_dd5d3a4a225b449285300d507323e73b.setContent(html_a0da8146d0a0430eacee525ef7cdbe1b);
+            
+
+            circle_marker_f082191fcf8d4f3ab0af8ee52ba3b075.bindPopup(popup_dd5d3a4a225b449285300d507323e73b);
+
+            
+        
+    
+            var circle_marker_2e5da8946de44e66aa156334723ae72f = L.circleMarker(
+                [30.3143949,-97.74574439999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_6fb111c8fdb04553ab910edcd3c34b93 = L.popup({maxWidth: '300'});
+
+            
+                var html_d809195ba30c4ead9a39600f2437bdf9 = $('<div id="html_d809195ba30c4ead9a39600f2437bdf9" style="width: 100.0%; height: 100.0%;">ROSEDALE, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_6fb111c8fdb04553ab910edcd3c34b93.setContent(html_d809195ba30c4ead9a39600f2437bdf9);
+            
+
+            circle_marker_2e5da8946de44e66aa156334723ae72f.bindPopup(popup_6fb111c8fdb04553ab910edcd3c34b93);
+
+            
+        
+    
+            var circle_marker_c4591f1d53404ba290413c8553572d26 = L.circleMarker(
+                [30.2091069,-97.6472349],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_6567f6e459254f0886fe9a5e37b1aac7 = L.popup({maxWidth: '300'});
+
+            
+                var html_af6bceb72c614577859776b7aae8258c = $('<div id="html_af6bceb72c614577859776b7aae8258c" style="width: 100.0%; height: 100.0%;">DEL VALLE EAST, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_6567f6e459254f0886fe9a5e37b1aac7.setContent(html_af6bceb72c614577859776b7aae8258c);
+            
+
+            circle_marker_c4591f1d53404ba290413c8553572d26.bindPopup(popup_6567f6e459254f0886fe9a5e37b1aac7);
+
+            
+        
+    
+            var circle_marker_e702726d852f4ec29bfb01ec63b41fd1 = L.circleMarker(
+                [30.3911419,-97.72183319999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_b8788eb430184dce889f9bb53075fd64 = L.popup({maxWidth: '300'});
+
+            
+                var html_c6444ec90f2a4db3b742654e9611761d = $('<div id="html_c6444ec90f2a4db3b742654e9611761d" style="width: 100.0%; height: 100.0%;">NORTH BURNET, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_b8788eb430184dce889f9bb53075fd64.setContent(html_c6444ec90f2a4db3b742654e9611761d);
+            
+
+            circle_marker_e702726d852f4ec29bfb01ec63b41fd1.bindPopup(popup_b8788eb430184dce889f9bb53075fd64);
+
+            
+        
+    
+            var circle_marker_6c072c95fdd848aa856a6464d121dce0 = L.circleMarker(
+                [30.19747109999999,-97.66635289999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_93420c2f7be3447f84f49e33e14319ff = L.popup({maxWidth: '300'});
+
+            
+                var html_8233415a22394c6aa9c107c259f8b870 = $('<div id="html_8233415a22394c6aa9c107c259f8b870" style="width: 100.0%; height: 100.0%;">BERGSTROM, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_93420c2f7be3447f84f49e33e14319ff.setContent(html_8233415a22394c6aa9c107c259f8b870);
+            
+
+            circle_marker_6c072c95fdd848aa856a6464d121dce0.bindPopup(popup_93420c2f7be3447f84f49e33e14319ff);
+
+            
+        
+    
+            var circle_marker_3566522a75914978b5d280cb20aae273 = L.circleMarker(
+                [30.1902458,-97.8454709],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_7d1e28f7030b47ec88955cbfa8df0004 = L.popup({maxWidth: '300'});
+
+            
+                var html_871b96d992654cf0998d634a874743bb = $('<div id="html_871b96d992654cf0998d634a874743bb" style="width: 100.0%; height: 100.0%;">SOUTH BRODIE, Austin, TX, USA- Cluster 1</div>')[0];
+                popup_7d1e28f7030b47ec88955cbfa8df0004.setContent(html_871b96d992654cf0998d634a874743bb);
+            
+
+            circle_marker_3566522a75914978b5d280cb20aae273.bindPopup(popup_7d1e28f7030b47ec88955cbfa8df0004);
+
+            
+        
+    
+            var circle_marker_372631ef15694eddbf13adae6d40d233 = L.circleMarker(
+                [30.2877869,-97.60559529999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_f002139e2e6c44cba262baab233b1001 = L.popup({maxWidth: '300'});
+
+            
+                var html_2696f8b66d6f432d88128dc0c3b630ef = $('<div id="html_2696f8b66d6f432d88128dc0c3b630ef" style="width: 100.0%; height: 100.0%;">DECKER LAKE, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_f002139e2e6c44cba262baab233b1001.setContent(html_2696f8b66d6f432d88128dc0c3b630ef);
+            
+
+            circle_marker_372631ef15694eddbf13adae6d40d233.bindPopup(popup_f002139e2e6c44cba262baab233b1001);
+
+            
+        
+    
+            var circle_marker_409b95098c1f427499bc5d507c2f8af7 = L.circleMarker(
+                [30.2560413,-97.7016981],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_7ce42c114d57418689c006496fc1058d = L.popup({maxWidth: '300'});
+
+            
+                var html_61c623edff354c96a7ed737811f9819a = $('<div id="html_61c623edff354c96a7ed737811f9819a" style="width: 100.0%; height: 100.0%;">GOVALLE, Austin, TX, USA- Cluster 3</div>')[0];
+                popup_7ce42c114d57418689c006496fc1058d.setContent(html_61c623edff354c96a7ed737811f9819a);
+            
+
+            circle_marker_409b95098c1f427499bc5d507c2f8af7.bindPopup(popup_7ce42c114d57418689c006496fc1058d);
+
+            
+        
+    
+            var circle_marker_198fd657a6df4cb9becab561bbc6d44d = L.circleMarker(
+                [30.3646906,-97.7351113],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_ac3417b4ede741fba5c5d380d293b324 = L.popup({maxWidth: '300'});
+
+            
+                var html_62fb347d9a814dd3a908b67df90310c9 = $('<div id="html_62fb347d9a814dd3a908b67df90310c9" style="width: 100.0%; height: 100.0%;">NORTH SHOAL CREEK, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_ac3417b4ede741fba5c5d380d293b324.setContent(html_62fb347d9a814dd3a908b67df90310c9);
+            
+
+            circle_marker_198fd657a6df4cb9becab561bbc6d44d.bindPopup(popup_ac3417b4ede741fba5c5d380d293b324);
+
+            
+        
+    
+            var circle_marker_16588e9d2e6e4d38bd2ac54ed43d34f9 = L.circleMarker(
+                [30.2275044,-97.7277824],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_4d3e260322a1457fbecf44e877c169b8 = L.popup({maxWidth: '300'});
+
+            
+                var html_76848b42413140f4a26bd34b04681cda = $('<div id="html_76848b42413140f4a26bd34b04681cda" style="width: 100.0%; height: 100.0%;">RIVERSIDE, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_4d3e260322a1457fbecf44e877c169b8.setContent(html_76848b42413140f4a26bd34b04681cda);
+            
+
+            circle_marker_16588e9d2e6e4d38bd2ac54ed43d34f9.bindPopup(popup_4d3e260322a1457fbecf44e877c169b8);
+
+            
+        
+    
+            var circle_marker_68038e7a1d33498eb9ed993659b53d35 = L.circleMarker(
+                [30.1858952,-97.7705793],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_991272155f2047539303e7ba074b7082 = L.popup({maxWidth: '300'});
+
+            
+                var html_62b60b754ce14a1e9b4431a54c669181 = $('<div id="html_62b60b754ce14a1e9b4431a54c669181" style="width: 100.0%; height: 100.0%;">UPPER BOGGY CREEK, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_991272155f2047539303e7ba074b7082.setContent(html_62b60b754ce14a1e9b4431a54c669181);
+            
+
+            circle_marker_68038e7a1d33498eb9ed993659b53d35.bindPopup(popup_991272155f2047539303e7ba074b7082);
+
+            
+        
+    
+            var circle_marker_fb513d7cb98143edafe458042f394b0d = L.circleMarker(
+                [30.2385146,-97.88848809999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_122b5873bb3b44cea9e87f15e5cac478 = L.popup({maxWidth: '300'});
+
+            
+                var html_c767a888d6b74cd6a8cda901c8c72ce1 = $('<div id="html_c767a888d6b74cd6a8cda901c8c72ce1" style="width: 100.0%; height: 100.0%;">WEST OAK HILL, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_122b5873bb3b44cea9e87f15e5cac478.setContent(html_c767a888d6b74cd6a8cda901c8c72ce1);
+            
+
+            circle_marker_fb513d7cb98143edafe458042f394b0d.bindPopup(popup_122b5873bb3b44cea9e87f15e5cac478);
+
+            
+        
+    
+            var circle_marker_0e92651663864f5caf2efb32980ee0d6 = L.circleMarker(
+                [30.32699239999999,-97.6877987],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_137e26a3151b4e17adde249354b5b27b = L.popup({maxWidth: '300'});
+
+            
+                var html_e65313ce81994d1cbb41e4e7b3b44537 = $('<div id="html_e65313ce81994d1cbb41e4e7b3b44537" style="width: 100.0%; height: 100.0%;">CORONADO HILLS, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_137e26a3151b4e17adde249354b5b27b.setContent(html_e65313ce81994d1cbb41e4e7b3b44537);
+            
+
+            circle_marker_0e92651663864f5caf2efb32980ee0d6.bindPopup(popup_137e26a3151b4e17adde249354b5b27b);
+
+            
+        
+    
+            var circle_marker_8ff6e2192c2c4cfca8936eb78e2bdced = L.circleMarker(
+                [30.292674,-97.55382399999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_ea89848c1ae340d2995eb64301ce76e9 = L.popup({maxWidth: '300'});
+
+            
+                var html_96ebbbedfac74deb9fd8da092bfd8605 = $('<div id="html_96ebbbedfac74deb9fd8da092bfd8605" style="width: 100.0%; height: 100.0%;">WHISPER VALLEY, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_ea89848c1ae340d2995eb64301ce76e9.setContent(html_96ebbbedfac74deb9fd8da092bfd8605);
+            
+
+            circle_marker_8ff6e2192c2c4cfca8936eb78e2bdced.bindPopup(popup_ea89848c1ae340d2995eb64301ce76e9);
+
+            
+        
+    
+            var circle_marker_91322e43cefe46359d421eabcdd65bbd = L.circleMarker(
+                [30.1402702,-97.78106369999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#8000ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_c44396294b75485dbf792d4ba8dc10b8 = L.popup({maxWidth: '300'});
+
+            
+                var html_0c8a0df5a2f54bc682ca82536dc8004b = $('<div id="html_0c8a0df5a2f54bc682ca82536dc8004b" style="width: 100.0%; height: 100.0%;">ONION CREEK, Austin, TX, USA- Cluster 2</div>')[0];
+                popup_c44396294b75485dbf792d4ba8dc10b8.setContent(html_0c8a0df5a2f54bc682ca82536dc8004b);
+            
+
+            circle_marker_91322e43cefe46359d421eabcdd65bbd.bindPopup(popup_c44396294b75485dbf792d4ba8dc10b8);
+
+            
+        
+    
+            var circle_marker_4ee9769a13db48f8b5a8e5e36aa8a808 = L.circleMarker(
+                [30.3630516,-97.696996],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_0c3cc39df3bc49eba8029a53ce1eabd0 = L.popup({maxWidth: '300'});
+
+            
+                var html_c878ab2ef8f449d68f38158245135c8a = $('<div id="html_c878ab2ef8f449d68f38158245135c8a" style="width: 100.0%; height: 100.0%;">NORTH LAMAR RUNDBERG, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_0c3cc39df3bc49eba8029a53ce1eabd0.setContent(html_c878ab2ef8f449d68f38158245135c8a);
+            
+
+            circle_marker_4ee9769a13db48f8b5a8e5e36aa8a808.bindPopup(popup_0c3cc39df3bc49eba8029a53ce1eabd0);
+
+            
+        
+    
+            var circle_marker_926e2b5773614258bbadce3a6e345a8c = L.circleMarker(
+                [30.3235367,-97.760685],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_6ee824737caa45ec938d8be514c34c62 = L.popup({maxWidth: '300'});
+
+            
+                var html_b3c3162e36d4496b8d402f68171c9d5c = $('<div id="html_b3c3162e36d4496b8d402f68171c9d5c" style="width: 100.0%; height: 100.0%;">HIGHLAND PARK, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_6ee824737caa45ec938d8be514c34c62.setContent(html_b3c3162e36d4496b8d402f68171c9d5c);
+            
+
+            circle_marker_926e2b5773614258bbadce3a6e345a8c.bindPopup(popup_6ee824737caa45ec938d8be514c34c62);
+
+            
+        
+    
+            var circle_marker_f44c9e1e216f4f219f8b6ded8cdb4ab0 = L.circleMarker(
+                [30.2706266,-97.7104428],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_275251b2af4b42b4a727b372008c9129 = L.popup({maxWidth: '300'});
+
+            
+                var html_4095429e83cd4a7eab54cb4eb16b3fd4 = $('<div id="html_4095429e83cd4a7eab54cb4eb16b3fd4" style="width: 100.0%; height: 100.0%;">ROSEWOOD, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_275251b2af4b42b4a727b372008c9129.setContent(html_4095429e83cd4a7eab54cb4eb16b3fd4);
+            
+
+            circle_marker_f44c9e1e216f4f219f8b6ded8cdb4ab0.bindPopup(popup_275251b2af4b42b4a727b372008c9129);
+
+            
+        
+    
+            var circle_marker_1c0cf7106d7046edb32933ac54df88e2 = L.circleMarker(
+                [30.2315744,-97.7373863],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_000b46d15b7448d5b83a110e21d68b19 = L.popup({maxWidth: '300'});
+
+            
+                var html_e1c4ca7b20404021903dc47a090fdca9 = $('<div id="html_e1c4ca7b20404021903dc47a090fdca9" style="width: 100.0%; height: 100.0%;">PARKER LANE, Austin, TX, USA- Cluster 3</div>')[0];
+                popup_000b46d15b7448d5b83a110e21d68b19.setContent(html_e1c4ca7b20404021903dc47a090fdca9);
+            
+
+            circle_marker_1c0cf7106d7046edb32933ac54df88e2.bindPopup(popup_000b46d15b7448d5b83a110e21d68b19);
+
+            
+        
+    
+            var circle_marker_81ebe7cc65fd4f5d97bb20dd2a614730 = L.circleMarker(
+                [30.3393252,-97.746952],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_0507e0fcdc52445886f865b34c0012de = L.popup({maxWidth: '300'});
+
+            
+                var html_3df77459802c4d949170fc90ed42e04f = $('<div id="html_3df77459802c4d949170fc90ed42e04f" style="width: 100.0%; height: 100.0%;">ALLANDALE, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_0507e0fcdc52445886f865b34c0012de.setContent(html_3df77459802c4d949170fc90ed42e04f);
+            
+
+            circle_marker_81ebe7cc65fd4f5d97bb20dd2a614730.bindPopup(popup_0507e0fcdc52445886f865b34c0012de);
+
+            
+        
+    
+            var circle_marker_4ba66608a82c4cc49dbaefe2bc85139c = L.circleMarker(
+                [30.20856089999999,-97.7661188],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_043ae8cc726b4e93b31ea3f8379ae0ec = L.popup({maxWidth: '300'});
+
+            
+                var html_f9acbc58f3f349b18e303d25325084ee = $('<div id="html_f9acbc58f3f349b18e303d25325084ee" style="width: 100.0%; height: 100.0%;">EAST CONGRESS, Austin, TX, USA- Cluster 3</div>')[0];
+                popup_043ae8cc726b4e93b31ea3f8379ae0ec.setContent(html_f9acbc58f3f349b18e303d25325084ee);
+            
+
+            circle_marker_4ba66608a82c4cc49dbaefe2bc85139c.bindPopup(popup_043ae8cc726b4e93b31ea3f8379ae0ec);
+
+            
+        
+    
+            var circle_marker_bb0f531d92fb4d64a7f1da54bc8413d6 = L.circleMarker(
+                [30.348322,-97.727536],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_dea2ef1fcd2649f68e0f96d5e8aa3597 = L.popup({maxWidth: '300'});
+
+            
+                var html_d24332099ea34a21aefd56530f0218a3 = $('<div id="html_d24332099ea34a21aefd56530f0218a3" style="width: 100.0%; height: 100.0%;">CRESTVIEW, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_dea2ef1fcd2649f68e0f96d5e8aa3597.setContent(html_d24332099ea34a21aefd56530f0218a3);
+            
+
+            circle_marker_bb0f531d92fb4d64a7f1da54bc8413d6.bindPopup(popup_dea2ef1fcd2649f68e0f96d5e8aa3597);
+
+            
+        
+    
+            var circle_marker_82f42d9491f04ac9b6fe59341b300cf4 = L.circleMarker(
+                [30.4984051,-97.78106369999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_d646c4f00dea4479be1e2ae0e55583dc = L.popup({maxWidth: '300'});
+
+            
+                var html_90c90d8be38546c193a2b1eb9770af12 = $('<div id="html_90c90d8be38546c193a2b1eb9770af12" style="width: 100.0%; height: 100.0%;">AVERY RANCH--LAKELINE, Austin, TX, USA- Cluster 1</div>')[0];
+                popup_d646c4f00dea4479be1e2ae0e55583dc.setContent(html_90c90d8be38546c193a2b1eb9770af12);
+            
+
+            circle_marker_82f42d9491f04ac9b6fe59341b300cf4.bindPopup(popup_d646c4f00dea4479be1e2ae0e55583dc);
+
+            
+        
+    
+            var circle_marker_e2709e5a45be43d19691b39124f5093f = L.circleMarker(
+                [30.27162349999999,-97.7248647],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_476fc91714cd4fe38f944afa09fc9cbb = L.popup({maxWidth: '300'});
+
+            
+                var html_872e1d1f78b8429f92d7dd17ab6760f9 = $('<div id="html_872e1d1f78b8429f92d7dd17ab6760f9" style="width: 100.0%; height: 100.0%;">CENTRAL EAST AUSTIN, Austin, TX, USA- Cluster 3</div>')[0];
+                popup_476fc91714cd4fe38f944afa09fc9cbb.setContent(html_872e1d1f78b8429f92d7dd17ab6760f9);
+            
+
+            circle_marker_e2709e5a45be43d19691b39124f5093f.bindPopup(popup_476fc91714cd4fe38f944afa09fc9cbb);
+
+            
+        
+    
+            var circle_marker_8021513ea3e044cbae3929019bb1eae8 = L.circleMarker(
+                [30.35086249999999,-97.6127772],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_cb678df7f14c4a2c9564d35530f474e2 = L.popup({maxWidth: '300'});
+
+            
+                var html_7dd5c377362846e4a8cadc7a13d09e3b = $('<div id="html_7dd5c377362846e4a8cadc7a13d09e3b" style="width: 100.0%; height: 100.0%;">HARRIS BRANCH, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_cb678df7f14c4a2c9564d35530f474e2.setContent(html_7dd5c377362846e4a8cadc7a13d09e3b);
+            
+
+            circle_marker_8021513ea3e044cbae3929019bb1eae8.bindPopup(popup_cb678df7f14c4a2c9564d35530f474e2);
+
+            
+        
+    
+            var circle_marker_f063897fed714471811979deab683115 = L.circleMarker(
+                [30.25765269999999,-97.80725450000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_53ce3cab8863448392f98b34e3e6b136 = L.popup({maxWidth: '300'});
+
+            
+                var html_f41e975b84614ea38af79145561878a3 = $('<div id="html_f41e975b84614ea38af79145561878a3" style="width: 100.0%; height: 100.0%;">BARTON CREEK MALL, Austin, TX, USA- Cluster 3</div>')[0];
+                popup_53ce3cab8863448392f98b34e3e6b136.setContent(html_f41e975b84614ea38af79145561878a3);
+            
+
+            circle_marker_f063897fed714471811979deab683115.bindPopup(popup_53ce3cab8863448392f98b34e3e6b136);
+
+            
+        
+    
+            var circle_marker_fe29142491c146ee9b56f701b56d60d7 = L.circleMarker(
+                [30.3121843,-97.7352856],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_bc10efc6c44240808d78ba761c2dcf52 = L.popup({maxWidth: '300'});
+
+            
+                var html_043c29adea53494c98c632f8fd3386b7 = $('<div id="html_043c29adea53494c98c632f8fd3386b7" style="width: 100.0%; height: 100.0%;">TRIANGLE STATE, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_bc10efc6c44240808d78ba761c2dcf52.setContent(html_043c29adea53494c98c632f8fd3386b7);
+            
+
+            circle_marker_fe29142491c146ee9b56f701b56d60d7.bindPopup(popup_bc10efc6c44240808d78ba761c2dcf52);
+
+            
+        
+    
+            var circle_marker_af618d164db242bd84cee98312d7bece = L.circleMarker(
+                [30.2976841,-97.73759629999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_bdc0de27c4d34d32a64d2eda50a3e331 = L.popup({maxWidth: '300'});
+
+            
+                var html_a428106269764b3d96f89893b56126b9 = $('<div id="html_a428106269764b3d96f89893b56126b9" style="width: 100.0%; height: 100.0%;">NORTH UNIVERSITY, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_bdc0de27c4d34d32a64d2eda50a3e331.setContent(html_a428106269764b3d96f89893b56126b9);
+            
+
+            circle_marker_af618d164db242bd84cee98312d7bece.bindPopup(popup_bdc0de27c4d34d32a64d2eda50a3e331);
+
+            
+        
+    
+            var circle_marker_b403c3dd94824a10ab8d6425fa1cb8fc = L.circleMarker(
+                [30.3328019,-97.7009416],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_5e2a6a7f5cb446fb89dc535a9775e561 = L.popup({maxWidth: '300'});
+
+            
+                var html_a726d343ca944f9184e5da2b79765cdf = $('<div id="html_a726d343ca944f9184e5da2b79765cdf" style="width: 100.0%; height: 100.0%;">ST. JOHNS, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_5e2a6a7f5cb446fb89dc535a9775e561.setContent(html_a726d343ca944f9184e5da2b79765cdf);
+            
+
+            circle_marker_b403c3dd94824a10ab8d6425fa1cb8fc.bindPopup(popup_5e2a6a7f5cb446fb89dc535a9775e561);
+
+            
+        
+    
+            var circle_marker_1128b0ba42124f9082cb26cd0fc43402 = L.circleMarker(
+                [30.2558365,-97.6849958],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_5f2df08116eb490e9cd2a558b8b76071 = L.popup({maxWidth: '300'});
+
+            
+                var html_7b7146b027644163be511f58af1e4c4d = $('<div id="html_7b7146b027644163be511f58af1e4c4d" style="width: 100.0%; height: 100.0%;">JOHNSTON TERRACE, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_5f2df08116eb490e9cd2a558b8b76071.setContent(html_7b7146b027644163be511f58af1e4c4d);
+            
+
+            circle_marker_1128b0ba42124f9082cb26cd0fc43402.bindPopup(popup_5f2df08116eb490e9cd2a558b8b76071);
+
+            
+        
+    
+            var circle_marker_2b9f469c8fae48ff9f8dea6597ea2108 = L.circleMarker(
+                [30.353213,-97.7674773],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_31e08527e9e04337920e1c1625621447 = L.popup({maxWidth: '300'});
+
+            
+                var html_1a02fc187cce4d30be82f4479c638852 = $('<div id="html_1a02fc187cce4d30be82f4479c638852" style="width: 100.0%; height: 100.0%;">NORTHWEST HILLS, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_31e08527e9e04337920e1c1625621447.setContent(html_1a02fc187cce4d30be82f4479c638852);
+            
+
+            circle_marker_2b9f469c8fae48ff9f8dea6597ea2108.bindPopup(popup_31e08527e9e04337920e1c1625621447);
+
+            
+        
+    
+            var circle_marker_2d998b4462724fb4b2014210ad05548f = L.circleMarker(
+                [30.4065779,-97.74789489999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_9454fabde210400199476ad361b01090 = L.popup({maxWidth: '300'});
+
+            
+                var html_aaea8c84c38f4cdd970b324d6bca66eb = $('<div id="html_aaea8c84c38f4cdd970b324d6bca66eb" style="width: 100.0%; height: 100.0%;">JOLLYVILLE, Austin, TX, USA- Cluster 4</div>')[0];
+                popup_9454fabde210400199476ad361b01090.setContent(html_aaea8c84c38f4cdd970b324d6bca66eb);
+            
+
+            circle_marker_2d998b4462724fb4b2014210ad05548f.bindPopup(popup_9454fabde210400199476ad361b01090);
+
+            
+        
+    
+            var circle_marker_890d43d6fa5b4d46829220fd3bf0b9f1 = L.circleMarker(
+                [30.1616044,-97.82053069999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_1e824544634d4821b3204da7fb40aad4 = L.popup({maxWidth: '300'});
+
+            
+                var html_f5c091566e9f4c479b9883e3b370d95b = $('<div id="html_f5c091566e9f4c479b9883e3b370d95b" style="width: 100.0%; height: 100.0%;">SLAUGHTER CREEK, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_1e824544634d4821b3204da7fb40aad4.setContent(html_f5c091566e9f4c479b9883e3b370d95b);
+            
+
+            circle_marker_890d43d6fa5b4d46829220fd3bf0b9f1.bindPopup(popup_1e824544634d4821b3204da7fb40aad4);
+
+            
+        
+    
+            var circle_marker_009c67d6429747baa9fa25e942342dc5 = L.circleMarker(
+                [30.2195294,-97.7839041],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_dedd7304bf42410582784c9e137605ce = L.popup({maxWidth: '300'});
+
+            
+                var html_c7bc33c2b4934cb1aa124c091b1c1f11 = $('<div id="html_c7bc33c2b4934cb1aa124c091b1c1f11" style="width: 100.0%; height: 100.0%;">SOUTH MANCHACA, Austin, TX, USA- Cluster 1</div>')[0];
+                popup_dedd7304bf42410582784c9e137605ce.setContent(html_c7bc33c2b4934cb1aa124c091b1c1f11);
+            
+
+            circle_marker_009c67d6429747baa9fa25e942342dc5.bindPopup(popup_dedd7304bf42410582784c9e137605ce);
+
+            
+        
+    
+            var circle_marker_bc432174caf44166b3c9a110dab91297 = L.circleMarker(
+                [30.330898,-97.73160650000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#00b5eb",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#00b5eb",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_9c31b965f8ad44af91ebc7bdc71a00ca = L.popup({maxWidth: '300'});
+
+            
+                var html_b61bd829f2e4487f9fc0e3d01733e01e = $('<div id="html_b61bd829f2e4487f9fc0e3d01733e01e" style="width: 100.0%; height: 100.0%;">BRENTWOOD, Austin, TX, USA- Cluster 3</div>')[0];
+                popup_9c31b965f8ad44af91ebc7bdc71a00ca.setContent(html_b61bd829f2e4487f9fc0e3d01733e01e);
+            
+
+            circle_marker_bc432174caf44166b3c9a110dab91297.bindPopup(popup_9c31b965f8ad44af91ebc7bdc71a00ca);
+
+            
+        
+    
+            var circle_marker_dbb1c9163127482585eadf2bccb91f58 = L.circleMarker(
+                [30.1939634,-97.7446677],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_5cd18523e0aa497babedc604975e0f4f = L.popup({maxWidth: '300'});
+
+            
+                var html_25a57fa5e6e9440fbbc39c66fe0f3cc9 = $('<div id="html_25a57fa5e6e9440fbbc39c66fe0f3cc9" style="width: 100.0%; height: 100.0%;">FRANKLIN PARK, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_5cd18523e0aa497babedc604975e0f4f.setContent(html_25a57fa5e6e9440fbbc39c66fe0f3cc9);
+            
+
+            circle_marker_dbb1c9163127482585eadf2bccb91f58.bindPopup(popup_5cd18523e0aa497babedc604975e0f4f);
+
+            
+        
+    
+            var circle_marker_491e7c250ee64bf48075d1d9dd235d75 = L.circleMarker(
+                [30.370122,-97.68842479999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_42bab96e393b440e9e83e4df9faf8f29 = L.popup({maxWidth: '300'});
+
+            
+                var html_39f39c6d48434eb0ae4155766388981c = $('<div id="html_39f39c6d48434eb0ae4155766388981c" style="width: 100.0%; height: 100.0%;">NORTH LAMAR, Austin, TX, USA- Cluster 1</div>')[0];
+                popup_42bab96e393b440e9e83e4df9faf8f29.setContent(html_39f39c6d48434eb0ae4155766388981c);
+            
+
+            circle_marker_491e7c250ee64bf48075d1d9dd235d75.bindPopup(popup_42bab96e393b440e9e83e4df9faf8f29);
+
+            
+        
+    
+            var circle_marker_86cc8cfaf05a4c59961b5ecb43665284 = L.circleMarker(
+                [30.1970686,-97.7771702],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#80ffb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_5285df91716648bc89e4ceb4f87b4bca = L.popup({maxWidth: '300'});
+
+            
+                var html_7989497b1e1040158587804c47115f47 = $('<div id="html_7989497b1e1040158587804c47115f47" style="width: 100.0%; height: 100.0%;">SWEETBRIAR, Austin, TX, USA- Cluster 4</div>')[0];
+                popup_5285df91716648bc89e4ceb4f87b4bca.setContent(html_7989497b1e1040158587804c47115f47);
+            
+
+            circle_marker_86cc8cfaf05a4c59961b5ecb43665284.bindPopup(popup_5285df91716648bc89e4ceb4f87b4bca);
+
+            
+        
+    
+            var circle_marker_0c6bffd4d35340a89edf80bb5eb4ea9b = L.circleMarker(
+                [30.3715289,-97.75424729999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ff0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_5fc3dae6278a447ab7a2b637e3206d46 = L.popup({maxWidth: '300'});
+
+            
+                var html_066b8a87ab564296b7b6b5359de9b474 = $('<div id="html_066b8a87ab564296b7b6b5359de9b474" style="width: 100.0%; height: 100.0%;">SPICEWOOD, Austin, TX, USA- Cluster 1</div>')[0];
+                popup_5fc3dae6278a447ab7a2b637e3206d46.setContent(html_066b8a87ab564296b7b6b5359de9b474);
+            
+
+            circle_marker_0c6bffd4d35340a89edf80bb5eb4ea9b.bindPopup(popup_5fc3dae6278a447ab7a2b637e3206d46);
+
+            
+        
+    
+            var circle_marker_90e944e505b1405186db163e153f3797 = L.circleMarker(
+                [30.3627291,-97.67922929999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_07a97a3249f4409a83f452802ef6b101 = L.popup({maxWidth: '300'});
+
+            
+                var html_0858f7a4b51a47e4baa7966aff594beb = $('<div id="html_0858f7a4b51a47e4baa7966aff594beb" style="width: 100.0%; height: 100.0%;">WINDSOR HILLS, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_07a97a3249f4409a83f452802ef6b101.setContent(html_0858f7a4b51a47e4baa7966aff594beb);
+            
+
+            circle_marker_90e944e505b1405186db163e153f3797.bindPopup(popup_07a97a3249f4409a83f452802ef6b101);
+
+            
+        
+    
+            var circle_marker_f72f9d82e4c14c5b90d06960360e692b = L.circleMarker(
+                [30.2787251,-97.6389785],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_064c6c975d9e47928fee17835ef7139f = L.popup({maxWidth: '300'});
+
+            
+                var html_617cb626eb2a40daae43aca94b761428 = $('<div id="html_617cb626eb2a40daae43aca94b761428" style="width: 100.0%; height: 100.0%;">ROGERS HILL, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_064c6c975d9e47928fee17835ef7139f.setContent(html_617cb626eb2a40daae43aca94b761428);
+            
+
+            circle_marker_f72f9d82e4c14c5b90d06960360e692b.bindPopup(popup_064c6c975d9e47928fee17835ef7139f);
+
+            
+        
+    
+            var circle_marker_1ee22b0c5b2c4d4195898b5e505113b3 = L.circleMarker(
+                [30.240054,-97.83031489999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffb360",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffb360",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_4e4115e0b64d4f3cba6a9e14e5a709a1);
+            
+    
+            var popup_796fc040b3284a5a8a37a0dcb82b5cd9 = L.popup({maxWidth: '300'});
+
+            
+                var html_b3bad465cb7a4b79b4edaa7d3d7670a3 = $('<div id="html_b3bad465cb7a4b79b4edaa7d3d7670a3" style="width: 100.0%; height: 100.0%;">EAST OAK HILL, Austin, TX, USA- Cluster 0</div>')[0];
+                popup_796fc040b3284a5a8a37a0dcb82b5cd9.setContent(html_b3bad465cb7a4b79b4edaa7d3d7670a3);
+            
+
+            circle_marker_1ee22b0c5b2c4d4195898b5e505113b3.bindPopup(popup_796fc040b3284a5a8a37a0dcb82b5cd9);
+
+            
+        
+</script>
